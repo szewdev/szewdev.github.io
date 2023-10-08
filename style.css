@@ -1,0 +1,87 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+	background-image: url('logo.png');
+	background-repeat: no-repeat;
+	background-position: center 20px;
+}
+
+.card {
+	margin-top: 294px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 395px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+.photo {
+    border-radius: 5px;
+    width: 100px;
+    margin-bottom: 15px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 22px;
+    color: #333;
+}
+
+h1 > span {
+	font-weight: normal;
+}
+
+.title {
+    color: #666;
+    margin: 5px 0;
+}
+
+p {
+    margin: 5px 0;
+}
+
+a {
+    color: #0077b5;
+    text-decoration: none;
+}
+
+.social-button {
+    display: inline-block;
+    margin-top: 10px;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+    margin: 10px 5px;
+}
+
+.linkedin {
+    background-color: #0077b5;
+}
+
+.linkedin:hover {
+    background-color: #005582;
+}
+
+.github {
+    background-color: #333;
+}
+
+.github:hover {
+    background-color: #555;
+}
+
+i {
+    margin-right: 5px;
+}
