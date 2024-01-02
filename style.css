@@ -1,18 +1,26 @@
 body {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: baseline;
     min-height: 100vh;
     margin: 0;
     background-color: #f0f0f0;
     font-family: Arial, sans-serif;
-	background-image: url('logo.png');
-	background-repeat: no-repeat;
-	background-position: center 20px;
+    background-image: url('logo.png');
+    background-repeat: no-repeat;
+    background-position: center 20px;
+    background-size: 395px auto;
+}
+
+.article {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    zoom: 0.01;
 }
 
 .card {
-	margin-top: 294px;
+    margin-top: 280px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -20,6 +28,16 @@ body {
     text-align: center;
     width: 395px;
     transition: 0.3s;
+}
+
+@media (min-height: 875px) {
+    .card {
+        margin-top: 0;
+    }
+
+    body {
+        align-items: center;
+    }
 }
 
 .card:hover {
@@ -38,17 +56,21 @@ h1 {
     color: #333;
 }
 
-h1 > span {
-	font-weight: normal;
+h1>span {
+    font-weight: normal;
 }
 
 .title {
     color: #666;
-    margin: 5px 0;
+    margin: 5px 0 10px 0;
 }
 
 p {
     margin: 5px 0;
+}
+
+p.contact {
+    font-size: 18px;
 }
 
 a {
@@ -82,6 +104,26 @@ a {
     background-color: #555;
 }
 
+.cv-pdf {
+    background-color: #d90f02;
+}
+
+.cv-pdf:hover {
+    background-color: #b30b00;
+}
+
+.resume {
+	background-color: #465ab5;
+}
+
+.resume:hover {
+	background-color: #3cb8f4;
+}
+
 i {
     margin-right: 5px;
+}
+
+div.buttons {
+    border-top: 0.5px solid #f1f1f1;
 }
